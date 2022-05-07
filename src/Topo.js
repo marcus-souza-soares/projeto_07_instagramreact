@@ -22,7 +22,10 @@ export default function Topo(){
                 </div>
         
                 <div class="icones">
-                    <IonIcons />
+                    <IonIcon text='paper-plane-outline'/>
+                    <IonIcon text='compass-outline' />
+                    <IonIcon text='heart-outline' />
+                    <IonIcon text='person-outline' />
                 </div>
 
                 <div class="icones-mobile">
@@ -32,8 +35,6 @@ export default function Topo(){
       </div>);
 }
 
-function IonIcons(){
-    const itens = ['paper-plane-outline','compass-outline','heart-outline','person-outline'];
-    return (itens.map( item => <ion-icon name={item}></ion-icon>));
-    
+function IonIcon(props){
+    return (<ion-icon name={props.texto}></ion-icon>);
 }
