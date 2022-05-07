@@ -21,7 +21,7 @@ function Storie() {
     return (usuarios.map(usuario =>
                             <div class="story">
                                 <div class="imagem">
-                                    <img src={`../../assets/img/${usuario}.svg`} alt="" />
+                                    <img src={`assets/img/${usuario}.svg`} alt="" />
                                 </div>
                                 <div class="usuario">{usuario}</div>
                             </div>))
