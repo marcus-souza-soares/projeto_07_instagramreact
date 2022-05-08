@@ -1,16 +1,22 @@
 import Sugestoes from "./components/Sugestoes";
 
 export default function Sidebar() {
-    return (
-        <div class="sidebar">
+
+    function Usuario(props) {
+        return (
             <div class="usuario">
-                <img src="assets/img/catanacomics.svg" alt='' />
+                <img src={props.perfil} alt='' />
                 <div class="texto">
-                    <strong>catanacomics</strong>
-                    Catana
+                    <strong>{props.usuario}</strong>
+                    {props.name}
                 </div>
             </div>
+        )
+    }
 
+    return (
+        <div class="sidebar">
+            <Usuario usuario="catanacomics" name="Catana" perfil="assets/img/catanacomics.svg"/>
             <div class="sugestoes">
                 <div class="titulo">
                     Sugestões para você
